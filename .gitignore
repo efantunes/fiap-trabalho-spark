@@ -1,0 +1,77 @@
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambientes virtuais
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# Arquivos de log e caches
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+.eggs/
+*.egg
+*.manifest
+*.spec
+*.cover
+*.coverage
+.coverage.*
+.cache/
+.tox/
+.nox/
+.mypy_cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+*.mo
+*.pot
+
+# Diretórios de build e distribuição
+build/
+dist/
+downloads/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.whl
+
+# Arquivos de configuração do Python
+.python-version
+.Python
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos específicos do Apache Spark
+metastore_db/
+derby.log
+spark-warehouse/
+warehouse/
+checkpoint/
+logs/
+log/
+work/
+target/
+reports/
+python/lib/pyspark.zip
+python/deps/
+python/.eggs/
+python/test_coverage/
+python/docs/_site/
+python/docs/source/reference/api/
+python/pyspark/python
