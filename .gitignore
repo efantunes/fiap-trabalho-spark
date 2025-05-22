@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *.pyo
 
+#Datasaets
+datasets-csv-clientes/
+
 # Ambientes virtuais
 .env/
 .venv/
