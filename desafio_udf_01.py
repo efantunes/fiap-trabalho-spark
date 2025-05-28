@@ -30,7 +30,14 @@ df = spark.createDataFrame(data, columns)
 def calc_idade(nm_col,dt_nasc_col):
     today = date.today()
     dt_nasc_col_obj = datetime.strptime(dt_nasc_col, "%Y-%m-%d")
-    age = today.year - dt_nasc_col_obj.year - ((today.month, today.day) < (dt_nasc_col_obj.month, dt_nasc_col_obj.day))
+    age = (
+        today.year 
+        - dt_nasc_col_obj.year 
+        -(
+            (today.month, today.day) 
+            < (dt_nasc_col_obj.month, dt_nasc_col_obj.day)
+        )
+    )
     return f"Olá, {nm_col}! Você tem {age} anos."
 
 df_saudacao= df.withColumn("saudacao",calc_idade(col("nome"),col("data_nascimento")))

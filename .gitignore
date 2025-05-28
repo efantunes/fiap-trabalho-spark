@@ -5,6 +5,8 @@ __pycache__/
 
 #Datasaets
 datasets-csv-clientes/
+artifacts/
+desafio_arrays_structs_data.json
 
 # Ambientes virtuais
 .env/
