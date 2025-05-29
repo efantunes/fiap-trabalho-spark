@@ -7,6 +7,7 @@ __pycache__/
 datasets-csv-clientes/
 artifacts/
 desafio_arrays_structs_data.json
+datasets-csv-pedidos/
 
 # Ambientes virtuais
 .env/
