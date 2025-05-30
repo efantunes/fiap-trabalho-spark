@@ -35,7 +35,8 @@ df_agg1.show(truncate=False)
 # Desafio AGREGAÇAO 2: 
 #   Agrupe pelo atributo PRODUTO, calcule a soma do valor total dos pedidos
 #   Atenção! 
-#   O dataset nao possui valor total do pedido, apenas quantidade e valor unitario dos produtos. 
+#   O dataset nao possui valor total do pedido, apenas quantidade e valor unitario 
+# dos produtos. 
 #   Dessa forma, sera necessario criar uma nova coluna de valor total calculado.
 
 # Incluindo a nova coluna de valor total do pedido
@@ -48,11 +49,14 @@ df_agg2 = df.groupBy(col('produto')) \
 print("Resultado do desafio de agregacao 2")
 df_agg2.show(truncate=False)
 
-# Desafio AGREGAÇAO 3: Agrupe pela DATA DO PEDIDO e calcule a soma do valor total dos pedidos
+# Desafio AGREGAÇAO 3: Agrupe pela DATA DO PEDIDO e calcule a soma do valor total 
+# dos pedidos
 # Atenção! 
-#   O dataset nao possui valor total do pedido, apenas quantidade e valor unitario dos produtos. 
+#   O dataset nao possui valor total do pedido, apenas quantidade e valor unitario 
+# dos produtos. 
 #   Dessa forma, sera necessario criar uma nova coluna de valor total calculado.
-#   O atributo DATA_CRIACAO possui hora, minuto e segundo. Utilize a funcao date_trunc para truncar o valor.
+#   O atributo DATA_CRIACAO possui hora, minuto e segundo. Utilize a funcao date_trunc 
+# para truncar o valor.
 
 # Incluindo a nova coluna de data truncada
 df = df.withColumn("DATA_PEDIDO", date_trunc('day',col('data_criacao')))
