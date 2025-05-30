@@ -64,3 +64,4 @@ df_unpivot = df.select("Produto", expr(unpivot_expr))
 print("DataFrame Após Unpivot:")
 df_unpivot.show()
 
+spark.stop()
